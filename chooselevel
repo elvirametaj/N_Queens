@@ -23,7 +23,7 @@ button {
     margin: 12px auto;
 }
 button:hover {
-    width: 200px;
+    width: 500px;
     cursor: pointer;
 }
 
