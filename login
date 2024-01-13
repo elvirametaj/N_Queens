@@ -110,10 +110,8 @@
 
             var username = document.getElementById('username').value;
 
-            // For simplicity, let's assume the login is successful
-            // You should perform proper validation and authentication here
 
-            // Update the welcome message with the user's name
+            //welcome message with the user's name
             alert("Welcome, " + username + "!"); // Replace this with your desired action
         }
     </script>
