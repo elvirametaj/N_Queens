@@ -9,8 +9,8 @@ namespace QueensApp.Server.Models
         public int Id { get; set; }
         public int ScoreAmount { get; set; }
 
-        [ForeignKey("User")]
-        public int UserId { get; set; }
-        public User User { get; set; }
+        [ForeignKey("Player")]
+        public int PlayerId { get; set; }
+        public Player Player { get; set; }
     }
 }

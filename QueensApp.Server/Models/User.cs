@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace QueensApp.Server.Models
 {
-    public class User
+    public class Player
     {
         [Key]
         public int Id { get;set; }
