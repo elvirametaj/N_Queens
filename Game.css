@@ -185,12 +185,16 @@ table {
   }
   
   #hintButton img {
-    width: 40px;           
-    height: 40px;          
+    width: 2rem;           
+    height: 2rem;          
     border-radius: 50%;    
   }
 .button {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 20px;
+    right: 60px;
+    cursor: pointer;
 }  
 

@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Level Easy</title>
-    <link rel="stylesheet" href="Game.css">
-</head>
+    <link rel="stylesheet" href="Game.css" />
+  </head>
 
-<body>
+  <body>
     <div class="background"></div>
-    <header> <img id="myBtn" class="info" src="question.svg" /></header>
+    <header>
+      <button onclick="takeHint()" class="button info" id="hintButton">
+        <img src="idea.png" alt="Hint" width="30" height="30" />
+      </button>
+      <img id="myBtn" class="info" src="question.svg" />
+    </header>
     <div id="overlay" class="overlayy"></div>
     <section class="main">
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <span class="modal-title">Important Instruction:</span>
-                <ul class="modal-info">
-                    <li>The user must arrange chess queens on a N x N grid in such a manner so that no two queens threaten one other; as a result, no two queens must share the same row, column, or diagonal. </li>
-                    <br>
-                    <li>Click on the given cell to mark where the Queen you want to place.</li>
-                    <br>
-                    <li>If you want to clear the grid, just press "Reset" button.</li>
-                    <br>
-                    <li>If you want to change the grid size by 2, just press the "Increase board size" or "Descrease board size" depending on your wish.</li>
-                    <br>
-                    <li>If you win a window will appear saying you have won, else you can retry to solve the puzzle.</li>
-                    <br>
-                </ul>
-            </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <span class="modal-title">Important Instruction:</span>
+          <ul class="modal-info">
+            <li>
+              The user must arrange chess queens on a N x N grid in such a
+              manner so that no two queens threaten one other; as a result, no
+              two queens must share the same row, column, or diagonal.
+            </li>
+            <br />
+            <li>
+              Click on the given cell to mark where the Queen you want to place.
+            </li>
+            <br />
+            <li>If you want to clear the grid, just press "Reset" button.</li>
+            <br />
+            <li>
+              If you want to change the grid size by 2, just press the "Increase
+              board size" or "Descrease board size" depending on your wish.
+            </li>
+            <br />
+            <li>
+              If you win a window will appear saying you have won, else you can
+              retry to solve the puzzle.
+            </li>
+            <br />
+          </ul>
         </div>
-        <div class="game_board">
-            <table id="chess_board"></table>
-        </div>
-        <div class="btn">
+      </div>
+      <div class="game_board">
+        <table id="chess_board"></table>
+      </div>
+      <div class="btn">
         <div class="title">
-            <h1>Welcome to N-Queens</h1>
-            <p id="currentBoardSize">Current board size: </p>
+          <h1>Welcome to N-Queens</h1>
+          <p id="currentBoardSize">Current board size:</p>
         </div>
-      
-          
-            <button onclick="changeSize('increase')" class="buttons">Increase Board Size</button>
-            <button onclick="changeSize('decrease')" class="buttons">Decrease Board Size</button>
-            <button onclick="takeHint()" class="button" id="hintButton">
 
-                    <img src="idea.png" alt="Hint" width="30" height="30">
+        <button onclick="changeSize('increase')" class="buttons">
+          Increase Board Size
+        </button>
+        <button onclick="changeSize('decrease')" class="buttons">
+          Decrease Board Size
+        </button>
 
-            </button>
-            <button onclick="resetBoard()" class="button1">Reset</button>
-            <div id="messageContainer"></div> 
-            <div id="incorrectMoveMessage" class="message-container"></div>
-        </div>
+        <button onclick="resetBoard()" class="button1">Reset</button>
+        <div id="messageContainer"></div>
+        <div id="incorrectMoveMessage" class="message-container"></div>
+      </div>
     </section>
     <script src="Modal.js"></script>
     <script src="Game.js"></script>
-</body>
-
+  </body>
 </html>
