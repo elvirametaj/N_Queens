@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Level Easy</title>
-    <link rel="stylesheet" href="Game.css" />
+    <link rel="stylesheet" href="../css/App.css" />
   </head>
 
   <body>
     <div class="background"></div>
     <header>
       <button onclick="takeHint()" class="button info" id="hintButton">
-        <img src="idea.png" alt="Hint" width="30" height="30" />
+        <img src="../images/idea.png" alt="Hint" width="30" height="30" />
       </button>
-      <img id="myBtn" class="info" src="question.svg" />
+      <img id="myBtn" class="info" src="../images/question.svg" />
     </header>
     <div id="overlay" class="overlayy"></div>
     <section class="main">
@@ -53,7 +53,8 @@
       </div>
       <div class="btn">
         <div class="title">
-          <h1>Welcome to N-Queens</h1>
+          <h1>Welcome to N-Queens.</h1>
+          <p>User is playing</p>
           <p id="currentBoardSize">Current board size:</p>
         </div>
 
@@ -69,7 +70,7 @@
         <div id="incorrectMoveMessage" class="message-container"></div>
       </div>
     </section>
-    <script src="toggleModal.js"></script>
-    <script src="Game.js"></script>
+    <script src="../js/toggleModal.js"></script>
+    <script src="../js/Game.js"></script>
   </body>
 </html>
