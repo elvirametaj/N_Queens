@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,7 +86,7 @@
 <body>
     <div class="login-container">
         <div class="left-side">
-            <img src="C:\Users\Vjosa\Pictures\chessimg.png" alt="Chess Image">
+            <img src="https://raw.githubusercontent.com/elvirametaj/N_Queens/master/chess.png" alt="Chess Image">
         </div>
         <div class="right-side">
             <div class="login-form">
@@ -105,29 +104,17 @@
     </div>
 
     <script>
-       function submitLogin(event) {
-     event.preventDefault();
-     var username = document.getElementById('username').value;
-     // Create a FormData object to simulate a form submission
-     var formData = new FormData();
-     formData.append('username', username);
-     // Use the fetch API to send the data to the server
-     fetch('/api/Player', {
-         method: 'POST',
-         headers: {
-             'Content-Type': 'application/json',
-         },
-         body: JSON.stringify({ username: username }),
-     })
-         .then(response => response.json())
-         .then(data => {
-             // Do something with the response if needed
-             console.log(data);
-         })
-         .catch(error => {
-             console.error('Error:', error);
-         });
- }
+        function submitLogin(event) {
+            event.preventDefault(); // Prevent form submission to a server for this example
+
+            var username = document.getElementById('username').value;
+
+            // For simplicity, let's assume the login is successful
+            // You should perform proper validation and authentication here
+
+            // Update the welcome message with the user's name
+            alert("Welcome, " + username + "!"); // Replace this with your desired action
+        }
     </script>
 </body>
 </html>
