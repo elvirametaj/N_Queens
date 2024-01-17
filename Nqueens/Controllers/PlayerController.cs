@@ -7,12 +7,7 @@ namespace Nqueens.Controllers
     [Route("api/[controller]")]
     public class PlayerController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
-
-        public PlayerController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
+        // first part added here
 
         [HttpPost]
         public async Task<IActionResult> PostUsername([FromBody] UsernameModel model)
@@ -30,9 +25,6 @@ namespace Nqueens.Controllers
             return Ok("Username successfully stored in the database.");
         }
     }
+    // second part added here
 
-    public class UsernameModel
-    {
-        public string Username { get; set; }
-    }
 }
