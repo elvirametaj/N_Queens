@@ -105,15 +105,29 @@
     </div>
 
     <script>
-        function submitLogin(event) {
-            event.preventDefault(); // Prevent form submission to a server for this example
-
-            var username = document.getElementById('username').value;
-
-
-            //welcome message with the user's name
-            alert("Welcome, " + username + "!"); // Replace this with your desired action
-        }
+       function submitLogin(event) {
+     event.preventDefault();
+     var username = document.getElementById('username').value;
+     // Create a FormData object to simulate a form submission
+     var formData = new FormData();
+     formData.append('username', username);
+     // Use the fetch API to send the data to the server
+     fetch('/api/Player', {
+         method: 'POST',
+         headers: {
+             'Content-Type': 'application/json',
+         },
+         body: JSON.stringify({ username: username }),
+     })
+         .then(response => response.json())
+         .then(data => {
+             // Do something with the response if needed
+             console.log(data);
+         })
+         .catch(error => {
+             console.error('Error:', error);
+         });
+ }
     </script>
 </body>
 </html>
