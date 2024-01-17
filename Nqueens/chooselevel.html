@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Level</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 100px;
+            background-color: #F5F5F5;
+        }
+        button {
+            display: block;
+            border-radius: 20px;
+            width: 200px;
+            height: 80px;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px 0;
+            cursor: pointer;
+            background-color: #BCAAA4;
+            border: none;
+            color: white;
+            position: relative;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        button:hover {
+            background-color: #D7CCC8;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h2>Choose Your Level</h2>
+<div class="btn-container">
+    <button id="easyBtn" onclick="redirectTo('LevelEasy.html')">EASY</button>
+    <button id="mediumBtn" onclick="redirectTo('LevelMedium.html')">MEDIUM</button>
+    <button id="hardBtn" onclick="redirectTo('LevelHard.html')">HARD</button>
+</div>
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
