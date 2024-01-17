@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Medium Level</title>
+      <link rel="stylesheet" href="medium.css">
+   </head>
+   <body >
+      <div class="background"></div>
+      <header > <img id="myBtn" class="info" src="/images/question.svg" /></header>
+      <section class="main">
+         <div id="myModal" class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <span class="modal-title">Important Instruction:</span>
+               <ul class="modal-info">
+                  <li>The user must arrange chess queens on a N x N grid in such a manner so that no two queens threaten one other; as a result, no two queens must share the same row, column, or diagonal. </li>
+                  </br>
+                  <li>Click on the given cell to mark where the Queen you want to place.</li>
+                  </br>
+                  <li>If your want to clear the grid, just press "Reset" button.</li>
+                  </br>
+                  <li>If you want to change the grid size by 2, just press the "Increase board size" or "Descrease board size" depending on your wish.</li>
+                  </br>
+                  <li>If you win a window will appear saying you have won, else you can retry to solve the puzzle.</li>
+                  </br>
+               </ul>
+            </div>
+         </div>
+         <div class="game_board">
+            <table id="chess_board"></table>
+         </div>
+         <div class="btn">
+            <h1 class="title">Medium Level</h1>
+            <button onclick="changeSize('increase')"  class="buttons">Increase Board</button>
+            <button onclick="changeSize('decrease')" class="buttons">Decrease Board</button>
+            <button onclick="resetBoard()" class="buttons">Reset</button>
+         </div>
+      </section>
+   </body>
+</html>
+<script src="modal.js"></script>
+<script src="medium.js"></script>
