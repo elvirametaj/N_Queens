@@ -30,17 +30,16 @@
             </div>
          </div>
          <div class="game_board">
-            <table>
-               <script src="medium.js"></script>
-            </table>
+            <table id="chess_board"></table>
          </div>
          <div class="btn">
             <h1 class="title">Medium Level</h1>
-            <button   class="buttons">Increase Board</button>
-            <button class="buttons">Decrease Board</button>
-            <button  class="buttons">Reset</button>
+            <button onclick="changeSize('increase')"  class="buttons">Increase Board</button>
+            <button onclick="changeSize('decrease')" class="buttons">Decrease Board</button>
+            <button onclick="resetBoard()" class="buttons">Reset</button>
          </div>
       </section>
    </body>
 </html>
 <script src="modal.js"></script>
+<script src="medium.js"></script>
