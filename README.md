@@ -16,14 +16,15 @@
 
 ## Difficulty Levels:
 
-- **Easy**:Enjoy a relaxed gaming experience with no timer and the option to receive hints.
-- **Medium**:A moderate challenge without a timer and hints for those seeking a balanced puzzle-solving experience.
-- **Hard**:Embrace the ultimate challenge with a timer to increase the intensity, and no hints for a truly demanding puzzle-solving adventure.
+- **Easy**: Enjoy a relaxed gaming experience with no timer and the option to receive hints.
+- **Medium**: A moderate challenge without a timer and hints for those seeking a balanced puzzle-solving experience.
+- **Hard**: Embrace the ultimate challenge with a timer to increase the intensity, and no hints for a truly demanding puzzle-solving adventure.
 
 ## How to play:
 
 1. Write username and then choose the level.
-2. 
+2. Strategically place queens on the chessboard without violating the rules.
+3. Enjoy the challenge of solving the N-Queens puzzle!
 
 
 
