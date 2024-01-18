@@ -18,7 +18,6 @@
 - **Hard**: Embrace the ultimate challenge with a timer to increase the intensity, and no hints for a truly demanding puzzle-solving adventure.
 ![Chooselevel](https://github.com/elvirametaj/N_Queens/assets/118827510/df8c0972-675b-4ca1-9c0a-f1177b1e0c3b|width=30)
 ![Easy](https://github.com/elvirametaj/N_Queens/assets/118827510/4a7966b7-3e4b-4b2b-9f39-ce678fb9600e|width=30)
-![Hint](https://github.com/elvirametaj/N_Queens/assets/118827510/78ee68e6-c8a7-4895-b474-2dee9dac1ac5|width=30)
 ![Medium](https://github.com/elvirametaj/N_Queens/assets/118827510/c75fb11f-3f03-4a50-bbf0-d884c0e0d9ed|width=30)
 ![Hard](https://github.com/elvirametaj/N_Queens/assets/118827510/5b748a1e-f4e1-441c-9f0f-3b94e6593e19)
 
@@ -31,6 +30,32 @@
 3. Enjoy the challenge of solving the N-Queens puzzle!
 
 ![finished](https://github.com/elvirametaj/N_Queens/assets/118827510/3bc01fef-858f-432d-b935-6b48cdca1fd6|width=30)
+
+
+# N-Queens Swift Implementation
+
+This is a simple Swift project that utilizes the N-Queens algorithm to solve a chess game with a specified number of queens. The project includes two levels: an easy level and a hard level.
+
+## How to Play
+
+The game features two levels:
+
+1. *Easy*: In this level, your task is to place the queens on the board in a way that avoids any conflicts. You can place the queens by clicking on the board.
+![easy](https://github.com/elvirametaj/N_Queens/assets/118827510/79d0f13a-48e1-4de7-b146-47b737ad8c12|width=30)
+![easy](https://github.com/elvirametaj/N_Queens/assets/118827510/6840f5ff-2f8a-411a-8d64-6317a3006aa9|width=30)
+
+2. *Hard*: This is a more challenging version of the game, where you have a limited time to solve it. Use the algorithm to place the queens without conflicts before the time runs out.
+![hard](https://github.com/elvirametaj/N_Queens/assets/118827510/21cc0710-8cfd-4e18-957a-8fa8887215b2|width=30)
+![hard](https://github.com/elvirametaj/N_Queens/assets/118827510/35e031b4-37a4-4403-825c-98ed90dfe7b3|width=30)
+
+## Advantages
+
+- The N-Queens algorithm is employed to ensure an optimal solution for the game.
+- The two levels of the game offer different experiences, ranging from easy to challenging.
+
+## Implementation
+
+The project is implemented in the Swift language using a simple graphical interface. The N-Queens algorithm is used to place the queens on the board and solve the game. A timer has been added to the hard level to make the game more challenging.
 
 
 
