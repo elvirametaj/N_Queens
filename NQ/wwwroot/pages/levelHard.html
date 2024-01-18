@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hard Level</title>
+      <link rel="stylesheet" href="../css/App.css">
+   </head>
+   <body >
+      <div class="background"></div>
+      <header style="display: inline-flex">
+         <img
+            class="restart"
+            onclick="redirectTo('welcome.html')"
+            src="../images/restart.svg"
+            />
+         <img
+            class="back"
+            onclick="redirectTo('chooselevel.html')"
+            src="../images/back.svg"
+            />
+         <img id="myBtn" class="info" src="../images/question.svg" />
+      </header>
+      <div id="overlay" class="overlayy"></div>
+      <section class="main">
+         <div id="myModal" class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <span class="modal-title">Important Instruction:</span>
+               <ul class="modal-info">
+                  <li>The user must arrange chess queens on a N x N grid in such a manner so that no two queens threaten one other; as a result, no two queens must share the same row, column, or diagonal. </li>
+                  </br>
+                  <li>Click on the given cell to mark where the Queen you want to place.</li>
+                  </br>
+                  <li>If your want to clear the grid, just press "Reset" button.</li>
+                  </br>
+                  <li>If you want to change the grid size by 2, just press the "Increase board size" or "Descrease board size" depending on your wish.</li>
+                  </br>
+                  <li>If you win a window will appear saying you have won, else you can retry to solve the puzzle.</li>
+                  </br>
+               </ul>
+            </div>
+         </div>
+         <div class="game_board">
+            <table id="chess_board"></table>
+         </div>
+         <div class="left">
+            <div class="title">
+               <h1 style="margin-bottom: 10px;">Level Hard.</h1>
+               <p id="username-p"></p>
+               <p id="currentBoardSize">Current board size:</p>
+            </div>
+            <div class="btn button-container">
+            <div id="countdownTimer">1:30</div>
+            <button onclick="changeSize('increase')" class="buttons">
+            Increase Board Size
+            </button>
+            <button onclick="changeSize('decrease')" class="buttons">
+            Decrease Board Size
+            </button>
+            <button onclick="resetBoard()" class="button1">Reset</button>
+            </div>
+            <div id="messageContainer"></div>
+            <div id="incorrectMoveMessage" class="message-container"></div>
+         </div>
+      </section>
+      <div id="winModal" class="win-modal ">
+         <div style="width: 30%;" class="modal-content" >
+            <div class="modal-info">
+               <p style="text-align: center;">You have won!</p>
+               <button onclick="closeModal()">Back to levels</button> 
+            </div>
+         </div>
+      </div>
+      <div id="timerModal" class="win-modal">
+         <div style="width: 30%;" class="modal-content" >
+            <div class="modal-info">
+               <p>Better luck next time!</p>
+               <button onclick="retryTimer()">Retry</button>
+               <button onclick="exitTimer()">Exit</button> 
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+<script src="../js/toggleModal.js"></script>
+<script src="../js/timer.js"></script>
+<script>
+   function redirectTo(page) {
+     window.location.href = page;
+   }
+
+    async function getUsername() {
+        try {
+            const response = await fetch('/api/player/get-username');
+            if (!response.ok) {
+                throw new Error('User not authenticated.');
+            }
+            const username = await response.text();
+
+            document.getElementById('username-p').innerText = `${username}! is currently playing`;
+        } catch (error) {
+            console.error(error.message);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', getUsername);
+</script>
