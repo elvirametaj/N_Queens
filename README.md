@@ -26,7 +26,7 @@
 
 ## How to play:
 
-1. Write username and then choose the level.
+1. Enter username and then choose the level.
 2. Strategically place queens on the chessboard without violating the rules.
 3. Enjoy the challenge of solving the N-Queens puzzle!
 
