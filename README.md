@@ -3,6 +3,7 @@
 
 ## Project Overview
 - Welcome to our **N-Queens game project**, a challenging single-player experience with three difficulty levels: easy, medium, and hard. The game leverages the **backtracking algorithm** to ensure optimal solutions for the players. This initiative is part of an assignment for our Algorithm Design and Analysis class.
+- The process of creating this game was managed using Trello where tasks were assigned, in progress and done.
 
 ![Welcome page](https://github.com/elvirametaj/N_Queens/assets/118827510/deb2c29b-3f11-4862-9672-ac7f79a0805a|width=30)
 
