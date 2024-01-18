@@ -10,7 +10,17 @@
 
   <body>
     <div class="background"></div>
-    <header>
+    <header style="display: inline-flex">
+      <img
+        class="restart"
+        onclick="redirectTo('welcome.html')"
+        src="../images/restart.svg"
+      />
+      <img
+        class="back"
+        onclick="redirectTo('chooselevel.html')"
+        src="../images/back.svg"
+      />
       <button onclick="takeHint()" class="button info" id="hintButton">
         <img src="../images/idea.png" alt="Hint" width="30" height="30" />
       </button>
@@ -80,5 +90,10 @@
     </div>
     <script src="../js/toggleModal.js"></script>
     <script src="../js/Game.js"></script>
+    <script>
+      function redirectTo(page) {
+        window.location.href = page;
+      }
+    </script>
   </body>
 </html>

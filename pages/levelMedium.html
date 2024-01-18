@@ -9,7 +9,18 @@
    </head>
    <body >
       <div class="background"></div>
-      <header > <img id="myBtn" class="info" src="../images/question.svg" /></header>
+      <header style="display: inline-flex">
+         <img
+           class="restart"
+           onclick="redirectTo('welcome.html')"
+           src="../images/restart.svg"
+         />
+         <img
+           class="back"
+           onclick="redirectTo('chooselevel.html')"
+           src="../images/back.svg"
+         />
+         <img id="myBtn" class="info" src="../images/question.svg" /></header>
       <div id="overlay" class="overlayy"></div>
       <section class="main">
          <div id="myModal" class="modal">
@@ -62,3 +73,8 @@
 </html>
 <script src="../js/toggleModal.js"></script>
 <script src="../js/Game.js"></script>
+<script>
+   function redirectTo(page) {
+     window.location.href = page;
+   }
+ </script>
