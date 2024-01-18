@@ -17,10 +17,13 @@ function createBoard() {
          let backgroundColor =
             (i + j) % 2 === 0 ? "#ccc2b4" : "#8e7b71";
 
-         let cellContent =
-            '<div class="box" style="width: 80px; height: 80px; background: ' +
-            backgroundColor +
-            '"></div>';
+            let cellSize = size === 4 ? 'four' : size === 6 ? 'six' : 'eight';
+            
+            let cellContent =
+               '<div class="box ' + cellSize + '" style="background: ' +
+               backgroundColor +
+               '"></div>';
+
 
          let cell = row.insertCell(j);
          cell.innerHTML = cellContent;
