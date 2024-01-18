@@ -54,7 +54,7 @@
       <div class="btn">
         <div class="title">
           <h1>Welcome to N-Queens.</h1>
-          <p>User is playing</p>
+          <p>User is currently playing level easy</p>
           <p id="currentBoardSize">Current board size:</p>
         </div>
 
@@ -70,6 +70,14 @@
         <div id="incorrectMoveMessage" class="message-container"></div>
       </div>
     </section>
+    <div id="winModal" class="win-modal">
+      <div style="width: 30%" class="modal-content">
+        <div class="modal-info">
+          <p style="text-align: center">You have won!</p>
+          <button onclick="closeModal()">Back to levels</button>
+        </div>
+      </div>
+    </div>
     <script src="../js/toggleModal.js"></script>
     <script src="../js/Game.js"></script>
   </body>

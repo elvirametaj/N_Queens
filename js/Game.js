@@ -71,17 +71,26 @@ function placeQueen(row, col) {
       let cell =
         chessBoard.rows[queensPositions[i].row].cells[queensPositions[i].col];
       cell.innerHTML =
-        '<span style="color: black; font-size: 36px; display:flex; justify-content: center; padding-top: 13px">♚</span>';
+        '<span style="color: black; font-size: 36px; display:flex; justify-content: center;">♚</span>';
     }
   
     if (queensPositions.length === size) {
       queensPositions = [];
       if (solve(0)) {
-        placeQueensOnBoard();
         hintTaken = true;
       }
     }
-  }
+}
+  
+function openModal() {
+  const modal = document.getElementById("winModal");
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  const modal = document.getElementById("winModal");
+  modal.style.display = "none";
+}
   
   function displayIncorrectMoveMessage() {
     const messageContainer = document.getElementById("messageContainer");
@@ -98,6 +107,7 @@ function placeQueen(row, col) {
 
 function solve(row) {
   if (row === size) {
+    openModal();
     return true;
   }
 
@@ -135,13 +145,6 @@ function isValidPlacement() {
   return true;
 }
 
-function placeQueensOnBoard() {
-  for (let i = 0; i < queensPositions.length; i++) {
-    let cell =
-      chessBoard.rows[queensPositions[i].row].cells[queensPositions[i].col];
-    cell.innerHTML = '<span class="queen">♛</span>';
-  }
-}
 
 function resetBoard() {
   removeHint();
