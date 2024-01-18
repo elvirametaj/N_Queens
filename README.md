@@ -8,7 +8,7 @@
 -
 
 
-![Welcome page](N_Queens_Game.pdf)
+![Welcome page] (N_Queens_Game.pdf)
 
 
 
