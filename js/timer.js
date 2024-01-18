@@ -246,7 +246,7 @@ function removeHint() {
   }
 }
 
-let timeInSeconds = 10; 
+let timeInSeconds = 90; 
 let countdownTimer;
 const timerElement = document.getElementById("countdownTimer");
 
