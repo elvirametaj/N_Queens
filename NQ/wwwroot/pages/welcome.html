@@ -1,165 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>N queens</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #e3dac9;
-            display: flex;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #e3dac9;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
 
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
 
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -70%);
-        }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+      }
 
-        h2 {
-            color: white;
-            width: max-content;
-            font-family: Brush Script MT, Brush Script Std, cursive;
-            font-weight: lighter;
-            font-size: 50px;
-        }
+      h2 {
+        color: white;
+        width: max-content;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-weight: lighter;
+        font-size: 50px;
+      }
 
-        .login-container {
-            display: flex;
-            flex-direction: column;
-            background-color: #c3b091;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 800px;
-            height: 700px;
-        }
+      .login-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #c3b091;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 800px;
+        height: 700px;
+      }
 
-        .welcome {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #c3b091;
-        }
+      .welcome {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c3b091;
+      }
 
-        #username {
-            border-radius: 18px;
-            padding: 1.12rem;
-            min-width: 250px;
-            width: 100%;
-            height: 15px;
-            margin-bottom: 20px;
-        }
+      #username {
+        border-radius: 18px;
+        padding: 1.12rem;
+        min-width: 250px;
+        width: 100%;
+        height: 15px;
+        margin-bottom: 20px;
+      }
 
-        .welcome img {
-            width: 100%;
-            height: 100%;
-        }
+      .welcome img {
+        width: 100%;
+        height: 100%;
+      }
 
-        .enter {
-            margin-top: 2rem;
-            align-self: center;
-        }
+      .enter {
+        margin-top: 2rem;
+        align-self: center;
+      }
 
-        .login-form {
-            max-width: 400px;
-        }
+      .login-form {
+        max-width: 400px;
+      }
 
-            .login-form label {
-                display: block;
-                margin-bottom: 8px;
-            }
+      .login-form label {
+        display: block;
+        margin-bottom: 8px;
+      }
 
-            .login-form input {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 16px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
+      .login-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
 
-        #startbtn {
-            text-align: center;
-        }
+      #startbtn {
+        text-align: center;
+      }
 
-        button {
-            padding: 1rem;
-            font-size: 16px;
-            background-color: #6f4e37;
-            color: white;
-            border: none;
-            border-radius: 9999px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+      button {
+        padding: 1rem;
+        font-size: 16px;
+        background-color: #6f4e37;
+        color: white;
+        border: none;
+        border-radius: 9999px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="login-container">
-        <div class="container">
-            <div class="welcome">
-                <img src="../images/welcome.jpeg" alt="Chess Image" />
-                <div class="centered">
-                    <h2>Welcome to N-Queens</h2>
-                    <div class="login-form">
-                        <form id="login-form" onsubmit="submitLogin(event)" action="/api/Player" method="post" name="loginForm">
-                            <input type="text"
-                                   placeholder="Please enter your username to play"
-                                   id="username"
-                                   name="username"
-                                   required />
-                            <div id="startbtn">
-                                <button type="submit">Start Game</button>
-                            </div>
-                        </form>
-                    </div>
+      <div class="container">
+        <div class="welcome">
+          <img src="../images/welcome.jpeg" alt="Chess Image" />
+          <div class="centered">
+            <h2>Welcome to N-Queens</h2>
+            <div class="login-form">
+              <form
+                id="login-form"
+                onsubmit="submitLogin(event)"
+                action="/api/Player"
+                method="post"
+                name="loginForm"
+              >
+                <input
+                  type="text"
+                  placeholder="Please enter your username to play"
+                  id="username"
+                  name="username"
+                  required
+                />
+                <div id="startbtn">
+                  <button type="submit">Start Game</button>
                 </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script>
-        async function submitLogin(event) {
-            event.preventDefault();
+      async function submitLogin(event) {
+        event.preventDefault();
 
-            var username = document.getElementById('username').value;
+        var username = document.getElementById("username").value;
 
-            var formData = new FormData();
-            formData.append('username', username);
+        var formData = new FormData();
+        formData.append("username", username);
 
-            try {
-                const response = await fetch('/api/Player', {
-                    method: 'POST',
-                    body: formData,
-                });
+        try {
+          const response = await fetch("/api/Player", {
+            method: "POST",
+            body: formData,
+          });
 
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
 
-                const data = await response.json();
-                console.log(data);
-            } catch (error) {
-                console.error('Error:', error);
-            }
-
+          const data = await response.json();
+          console.log(data);
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
