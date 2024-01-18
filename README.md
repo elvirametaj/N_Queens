@@ -8,7 +8,7 @@
 -
 
 
-![Welcome page] (N_Queens_Game.pdf)
+![Welcome page](https://github.com/elvirametaj/N_Queens/blob/master/N_Queens_Game.pdf)
 
 
 
