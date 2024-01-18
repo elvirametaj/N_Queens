@@ -273,3 +273,44 @@ td {
 	right: 60px;
 	cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+	.title {
+	  position: absolute;
+	  top: 40px; 
+	  left: 50%;
+	  transform: translateX(-50%);
+	  text-align: center;
+	  width: 100%;
+	}
+  
+	.game_board {
+	  margin-top: 80px;
+	  position: relative;
+	}
+  
+	.button-container {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  position: absolute;
+	  top: 100%; 
+	  left: 50%;
+	  transform: translateX(-50%);
+	  margin-top: 10px; 
+	}
+  
+	.buttons {
+	  margin-top: 10px; 
+	}
+
+	.title h1, .title p {
+	  margin-top: 20px;
+	  padding: 5px; 
+	}
+  
+	#currentBoardSize {
+	  margin-top: 3px; 
+	  padding: 5px; 
+	}
+  }
+  
