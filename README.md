@@ -1,5 +1,5 @@
 # N_Queens
--The N-Queens problem is a classic puzzle or mathematical problem that involves placing N chess queens on an N×N chessboard in such a way that no two queens threaten each other. In chess, a queen can move horizontally, vertically, or diagonally, and the objective is to find a configuration where no two queens share the same row, column, or diagonal.
+-**The N-Queens problem** is a classic puzzle or mathematical problem that involves placing N chess queens on an N×N chessboard in such a way that no two queens threaten each other. In chess, a queen can move horizontally, vertically, or diagonally, and the objective is to find a configuration where no two queens share the same row, column, or diagonal.
 
 ![N-Queen-Problem](https://github.com/elvirametaj/N_Queens/assets/118827510/ae13e938-b67f-4edd-a90a-04bea67048c0)
 
