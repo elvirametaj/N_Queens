@@ -9,6 +9,21 @@
 
 
 
+## Technology Stack:
+- **Backend**:Developed in C# for ASP.NET Core web application (Model-View-Controller).
+- **Frontend**:Implemented using HTML, CSS, and JavaScript for an interactive user interface.
+- **Design**:Created using Figma.
+
+## Difficulty Levels:
+
+- **Easy**:Enjoy a relaxed gaming experience with no timer and the option to receive hints.
+- **Medium**:A moderate challenge without a timer and hints for those seeking a balanced puzzle-solving experience.
+- **Hard**:Embrace the ultimate challenge with a timer to increase the intensity, and no hints for a truly demanding puzzle-solving adventure.
+
+## How to play:
+
+1. Write username and then choose the level.
+2. 
 
 
 
