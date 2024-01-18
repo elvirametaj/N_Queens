@@ -155,10 +155,6 @@ body {
 	cursor: pointer;
 }
 
-.game_board {
-	max-width: 70%;
-	margin: 2em 10em 0em 2em;
-}
 
 .title {
 	color: black;
@@ -169,7 +165,7 @@ body {
 }
 
 #currentBoardSize {
-	margin-top: 100px;
+	margin-top: 10px;
 }
 
 .btn {
@@ -205,7 +201,7 @@ td {
 
 .buttons {
 	margin-left: 0.8em;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 	width: 150px;
 	height: 50px;
 	background-color: #95abb5;
@@ -273,7 +269,25 @@ td {
 	right: 60px;
 	cursor: pointer;
 }
+
+.left {
+	margin-left: 100px;
+}
 @media only screen and (max-width: 600px) {
+
+
+.main {
+	margin: 25% auto;
+}
+
+
+table {
+	margin-top: 10%;
+}
+
+.left {
+	margin-left: 0px;
+}
 	.title {
 	  position: absolute;
 	  top: 40px; 
@@ -284,7 +298,7 @@ td {
 	}
   
 	.game_board {
-	  margin-top: 80px;
+	  margin-top: 60px;
 	  position: relative;
 	}
   
@@ -304,7 +318,6 @@ td {
 	}
 
 	.title h1, .title p {
-	  margin-top: 20px;
 	  padding: 5px; 
 	}
   

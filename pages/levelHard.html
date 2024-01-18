@@ -45,21 +45,22 @@
          <div class="game_board">
             <table id="chess_board"></table>
          </div>
-         <div class="btn">
+         <div class="left">
             <div class="title">
-               <h1>Welcome to N-Queens.</h1>
-               <p>User is currently playing level hard</p>
+               <h1 style="margin-bottom: 10px;">Level Hard.</h1>
+               <p>User is currently playing</p>
                <p id="currentBoardSize">Current board size:</p>
             </div>
+            <div class="btn button-container">
             <div id="countdownTimer">1:30</div>
-            <div class="button-container">
             <button onclick="changeSize('increase')" class="buttons">
             Increase Board Size
             </button>
             <button onclick="changeSize('decrease')" class="buttons">
             Decrease Board Size
             </button>
-            <button onclick="resetBoard()" class="button1">Reset</button></div>
+            <button onclick="resetBoard()" class="button1">Reset</button>
+            </div>
             <div id="messageContainer"></div>
             <div id="incorrectMoveMessage" class="message-container"></div>
          </div>
