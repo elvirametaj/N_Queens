@@ -4,12 +4,13 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Medium Level</title>
+      <title>Hard Level</title>
       <link rel="stylesheet" href="../css/App.css">
    </head>
    <body >
       <div class="background"></div>
-      <header > <img id="myBtn" class="info" src="../images/question.svg" /></header>
+      <header>   <img id="myBtn" class="info" src="../images/question.svg" /></header>
+      <div id="overlay" class="overlayy"></div>
       <section class="main">
          <div id="myModal" class="modal">
             <div class="modal-content">
@@ -33,13 +34,41 @@
             <table id="chess_board"></table>
          </div>
          <div class="btn">
-            <h1 class="title">Medium Level</h1>
-            <button onclick="changeSize('increase')"  class="buttons">Increase Board</button>
-            <button onclick="changeSize('decrease')" class="buttons">Decrease Board</button>
-            <button onclick="resetBoard()" class="buttons">Reset</button>
+            <div class="title">
+               <h1>Welcome to N-Queens.</h1>
+               <p>User is currently playing level hard</p>
+               <p id="currentBoardSize">Current board size:</p>
+             </div>
+
+             <div id="countdownTimer">00:01</div>
+
+            <button onclick="changeSize('increase')" class="buttons">
+               Increase Board Size
+             </button>
+             <button onclick="changeSize('decrease')" class="buttons">
+               Decrease Board Size
+             </button>
+     
+             <button onclick="resetBoard()" class="button1">Reset</button>
+             <div id="messageContainer"></div>
+             <div id="incorrectMoveMessage" class="message-container"></div>
          </div>
       </section>
+      <div id="winModal" class="win-modal ">
+        <div style="width: 30%;" class="modal-content" > 
+           <div class="modal-info">
+        <p style="text-align: center;">You have won!</p>
+        <button onclick="closeModal()">Back to levels</button> </div> </div>
+      </div>
+
+      <div id="timerModal" class="win-modal">
+        <div style="width: 30%;" class="modal-content" > 
+            <div class="modal-info">
+        <p>Better luck next time!</p>
+        <button onclick="retryTimer()">Retry</button>
+        <button onclick="exit()">Exit</button> </div> </div>
+      </div>
    </body>
 </html>
 <script src="../js/toggleModal.js"></script>
-<script src="../js/Game.js"></script>
+<script src="../js/timer.js"></script>
