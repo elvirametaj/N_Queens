@@ -90,6 +90,7 @@ function openModal() {
 function closeModal() {
   const modal = document.getElementById("winModal");
   modal.style.display = "none";
+  window.location.href = "chooselevel.html";
 }
   
   function displayIncorrectMoveMessage() {

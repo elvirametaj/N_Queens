@@ -90,7 +90,8 @@ function openModal() {
 
 function closeModal() {
   const modal = document.getElementById("winModal");
-  modal.style.display = "none";
+    modal.style.display = "none";
+    window.location.href = "chooselevel.html";
 }
   
   function displayIncorrectMoveMessage() {
@@ -280,8 +281,8 @@ function openTimerModal() {
 
 function closeTimerModal() {
   const modal = document.getElementById("timerModal");
-
-  modal.style.display = "none";
+    modal.style.display = "none";
+    window.location.href = "chooselevel.html";
 }
 
 function retryTimer() {
