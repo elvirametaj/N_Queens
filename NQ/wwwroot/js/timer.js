@@ -44,14 +44,13 @@ function createBoard() {
 }
 
 function changeSize(action) {
-   if (action === "increase") {
-      size = size === 4 ? 6 : size === 6 ? 8 : 4;
+   if (action === "increase" && size < 8 ) {    
+      size = size + 2;
       timeInSeconds = 90;
-   } else if (action === "decrease") {
-      size = size === 8 ? 6 : size === 6 ? 4 : 8;
+   } else if (action === "decrease" && size > 4) {
+      size = size - 2;
       timeInSeconds = 90;
    }
-
    createBoard();
 }
 
