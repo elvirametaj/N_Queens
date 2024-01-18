@@ -5,11 +5,7 @@
 - Welcome to our **N-Queens game project**, a challenging single-player experience with three difficulty levels: easy, medium, and hard. The game leverages the **backtracking algorithm** to ensure optimal solutions for the players. This initiative is part of an assignment for our Algorithm Design and Analysis class.
 
 
-![Welcome page](C:\Users\PULSE Electronics\Downloads\welcomepage.jpg)
-![
-
-
-
+![Welcome page](https://github.com/elvirametaj/N_Queens/assets/118827510/deb2c29b-3f11-4862-9672-ac7f79a0805a|width=30)
 
 ## Technology Stack:
 - **Backend**:Developed in C# for ASP.NET Core web application (Model-View-Controller).
@@ -21,6 +17,12 @@
 - **Easy**: Enjoy a relaxed gaming experience with no timer and the option to receive hints.
 - **Medium**: A moderate challenge without a timer and hints for those seeking a balanced puzzle-solving experience.
 - **Hard**: Embrace the ultimate challenge with a timer to increase the intensity, and no hints for a truly demanding puzzle-solving adventure.
+![Chooselevel](https://github.com/elvirametaj/N_Queens/assets/118827510/df8c0972-675b-4ca1-9c0a-f1177b1e0c3b}width=30)
+![Easy](https://github.com/elvirametaj/N_Queens/assets/118827510/2b1012d8-1f7d-4349-a2c9-4b078ec06ae7|width=30)
+![Medium](https://github.com/elvirametaj/N_Queens/assets/118827510/c75fb11f-3f03-4a50-bbf0-d884c0e0d9ed|width=30)
+![Hard](https://github.com/elvirametaj/N_Queens/assets/118827510/cba11443-dfd9-404d-b34c-0c6103d5f721|width=30)
+
+
 
 ## How to play:
 
