@@ -22,7 +22,6 @@
         text-align: center;
         color: white;
       }
-
       .centered {
         position: absolute;
         top: 50%;
@@ -97,7 +96,6 @@
       #startbtn {
         text-align: center;
       }
-
       button {
         padding: 1rem;
         font-size: 16px;
@@ -107,6 +105,35 @@
         border-radius: 9999px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+      }
+      @media only screen and (max-width: 600px) {
+        .login-container {
+          width: 100%;
+          height: auto;
+        }
+
+        .welcome img {
+          height: auto;
+        }
+
+        .centered {
+          transform: translate(-50%, -50%);
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+
+        #username {
+          min-width: 200px;
+        }
+        #username::placeholder {
+          font-size: 11px;
+        }
+
+        button {
+          font-size: 14px;
+        }
       }
     </style>
   </head>
@@ -146,7 +173,6 @@
     <script>
       async function submitLogin(event) {
         event.preventDefault();
-
         var username = document.getElementById("username").value;
 
         var formData = new FormData();
