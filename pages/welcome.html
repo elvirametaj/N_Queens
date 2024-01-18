@@ -106,6 +106,36 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
+      @media only screen and (max-width: 600px) {
+        .login-container {
+          width: 100%;
+          height: auto;
+        }
+      
+        .welcome img {
+          height: auto;
+        }
+      
+        .centered {
+          transform: translate(-50%, -50%);
+        }
+      
+        h2 {
+          font-size: 30px;
+        }
+      
+        #username {
+          min-width: 200px;
+        }
+        #username::placeholder {
+          font-size: 11px; 
+        }
+      
+        button {
+          font-size: 14px;
+        }
+      }
+      
     </style>
   </head>
 
