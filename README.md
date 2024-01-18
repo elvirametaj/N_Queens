@@ -14,13 +14,13 @@
 
 ## Contributors
 
-- [Ema Zeqiri](https://github.com/emazech)
-- [Elonita Krasniqi](https://github.com/ElonitaKrasniqi1)
-- [Era Maliqi](https://github.com/eramaliqi)
-- [Eriona Mustafa](https://github.com/ErionaM)
-- [Erisa Cervadiku](https://github.com/erisa3002)
-- [Arijesa Muja](https://github.com/ArijesaMuja)
-- [Agnesa Jashanica](https://github.com/agnesajashanicaa)
-- [Vjosa Salihu](https://github.com/Vsalihu1)
-- [Enes Saglam](https://github.com/SAGLAMENES)
-- [Elvira Metaj](https://github.com/elvirametaj)
+-Leader of Frontend team [Ema Zeqiri](https://github.com/emazech)
+-Member of Frontend team [Elonita Krasniqi](https://github.com/ElonitaKrasniqi1)
+-Member of Backend team [Era Maliqi](https://github.com/eramaliqi)
+-Leader of Backend team [Eriona Mustafa](https://github.com/ErionaM)
+-Member of Backend team [Erisa Cervadiku](https://github.com/erisa3002)
+-Leader of UX/UI design [Arijesa Muja](https://github.com/ArijesaMuja)
+-Member of UX/UI design [Agnesa Jashanica](https://github.com/agnesajashanicaa)
+-Member of Frontend team [Vjosa Salihu](https://github.com/Vsalihu1)
+-Member of Frontend team [Enes Saglam](https://github.com/SAGLAMENES)
+-Technical Project Manager [Elvira Metaj](https://github.com/elvirametaj)
