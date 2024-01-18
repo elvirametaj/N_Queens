@@ -8,6 +8,9 @@
 -
 
 
+![Welcome page](N_Queens_Game.pdf)
+
+
 
 ## Technology Stack:
 - **Backend**:Developed in C# for ASP.NET Core web application (Model-View-Controller).
