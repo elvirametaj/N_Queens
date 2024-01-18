@@ -1,14 +1,12 @@
 # N_Queens
 -**The N-Queens problem** is a classic puzzle or mathematical problem that involves placing N chess queens on an N×N chessboard in such a way that no two queens threaten each other. In chess, a queen can move horizontally, vertically, or diagonally, and the objective is to find a configuration where no two queens share the same row, column, or diagonal.
 
-![N-Queen-Problem](https://github.com/elvirametaj/N_Queens/assets/118827510/ae13e938-b67f-4edd-a90a-04bea67048c0|width=40)
-
-
 ## Project Overview
--
+- Welcome to our **N-Queens game project**, a challenging single-player experience with three difficulty levels: easy, medium, and hard. The game leverages the **backtracking algorithm** to ensure optimal solutions for the players. This initiative is part of an assignment for our Algorithm Design and Analysis class.
 
 
-![Welcome page]
+![Welcome page](C:\Users\PULSE Electronics\Downloads\welcomepage.jpg)
+![
 
 
 
