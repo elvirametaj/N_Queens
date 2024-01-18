@@ -10,17 +10,18 @@
    <body >
       <div class="background"></div>
       <header style="display: inline-flex">
-        <img
-          class="restart"
-          onclick="redirectTo('welcome.html')"
-          src="../images/restart.svg"
-        />
-        <img
-          class="back"
-          onclick="redirectTo('chooselevel.html')"
-          src="../images/back.svg"
-        />
-        <img id="myBtn" class="info" src="../images/question.svg" /></header>
+         <img
+            class="restart"
+            onclick="redirectTo('welcome.html')"
+            src="../images/restart.svg"
+            />
+         <img
+            class="back"
+            onclick="redirectTo('chooselevel.html')"
+            src="../images/back.svg"
+            />
+         <img id="myBtn" class="info" src="../images/question.svg" />
+      </header>
       <div id="overlay" class="overlayy"></div>
       <section class="main">
          <div id="myModal" class="modal">
@@ -49,42 +50,42 @@
                <h1>Welcome to N-Queens.</h1>
                <p>User is currently playing level hard</p>
                <p id="currentBoardSize">Current board size:</p>
-             </div>
-
-             <div id="countdownTimer">1:30</div>
-
+            </div>
+            <div id="countdownTimer">1:30</div>
             <button onclick="changeSize('increase')" class="buttons">
-               Increase Board Size
-             </button>
-             <button onclick="changeSize('decrease')" class="buttons">
-               Decrease Board Size
-             </button>
-     
-             <button onclick="resetBoard()" class="button1">Reset</button>
-             <div id="messageContainer"></div>
-             <div id="incorrectMoveMessage" class="message-container"></div>
+            Increase Board Size
+            </button>
+            <button onclick="changeSize('decrease')" class="buttons">
+            Decrease Board Size
+            </button>
+            <button onclick="resetBoard()" class="button1">Reset</button>
+            <div id="messageContainer"></div>
+            <div id="incorrectMoveMessage" class="message-container"></div>
          </div>
       </section>
       <div id="winModal" class="win-modal ">
-        <div style="width: 30%;" class="modal-content" > 
-           <div class="modal-info">
-        <p style="text-align: center;">You have won!</p>
-        <button onclick="closeModal()">Back to levels</button> </div> </div>
-      </div>
-
-      <div id="timerModal" class="win-modal">
-        <div style="width: 30%;" class="modal-content" > 
+         <div style="width: 30%;" class="modal-content" >
             <div class="modal-info">
-        <p>Better luck next time!</p>
-        <button onclick="retryTimer()">Retry</button>
-        <button onclick="exitTimer()">Exit</button> </div> </div>
+               <p style="text-align: center;">You have won!</p>
+               <button onclick="closeModal()">Back to levels</button> 
+            </div>
+         </div>
+      </div>
+      <div id="timerModal" class="win-modal">
+         <div style="width: 30%;" class="modal-content" >
+            <div class="modal-info">
+               <p>Better luck next time!</p>
+               <button onclick="retryTimer()">Retry</button>
+               <button onclick="exitTimer()">Exit</button> 
+            </div>
+         </div>
       </div>
    </body>
 </html>
 <script src="../js/toggleModal.js"></script>
 <script src="../js/timer.js"></script>
 <script>
-    function redirectTo(page) {
-      window.location.href = page;
-    }
-  </script>
+   function redirectTo(page) {
+     window.location.href = page;
+   }
+</script>
