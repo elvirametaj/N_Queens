@@ -45,11 +45,13 @@
          <div class="game_board">
             <table id="chess_board"></table>
          </div>
-         <div class="btn">
+         <div class="left">
             <div class="title">
-               <h1 id="username-p"></h1>
+               <h1 style="margin-bottom: 10px;">Level Hard.</h1>
+               <p id="username-p"></p>
                <p id="currentBoardSize">Current board size:</p>
             </div>
+            <div class="btn button-container">
             <div id="countdownTimer">1:30</div>
             <button onclick="changeSize('increase')" class="buttons">
             Increase Board Size
@@ -58,6 +60,7 @@
             Decrease Board Size
             </button>
             <button onclick="resetBoard()" class="button1">Reset</button>
+            </div>
             <div id="messageContainer"></div>
             <div id="incorrectMoveMessage" class="message-container"></div>
          </div>
@@ -88,7 +91,6 @@
      window.location.href = page;
    }
 
-    // Function to get the username from the server
     async function getUsername() {
         try {
             const response = await fetch('/api/player/get-username');
@@ -97,13 +99,11 @@
             }
             const username = await response.text();
 
-            // Update the #username-p element with the retrieved username
-            document.getElementById('username-p').innerText = `${username}! is currently playing the hard level.`;
+            document.getElementById('username-p').innerText = `${username}! is currently playing`;
         } catch (error) {
             console.error(error.message);
         }
     }
 
-    // Call the function to get the username when the page loads
     document.addEventListener('DOMContentLoaded', getUsername);
 </script>
