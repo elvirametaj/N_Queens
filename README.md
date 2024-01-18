@@ -71,4 +71,4 @@ The project is implemented in the Swift language using a simple graphical interf
 - Member of Backend team: [Erisa Cervadiku](https://github.com/erisa3002)
 - Leader of UX/UI design: [Arijesa Muja](https://github.com/ArijesaMuja)
 - Member of UX/UI design: [Agnesa Jashanica](https://github.com/agnesajashanicaa)
-- Technical Project Manager: [Elvira Metaj](https://github.com/elvirametaj)
+- Technical Project Manager and DevOps: [Elvira Metaj](https://github.com/elvirametaj)
